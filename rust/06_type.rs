@@ -8,7 +8,8 @@ fn main()
     let y = 3.2;
     print_typename(y); // f64
 
-    let s1 = 's', s2 = "s";
+    let s1 = 's';
+    let s2 = "s";
     print_typename(s1); // char
     print_typename(s2); // &str
 
