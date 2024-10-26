@@ -19,4 +19,9 @@ fn main()
         println!("while：今{}回目です",number);
         number += 1;
     }
+
+    // numberが1以上10以下の間でループを続ける（次のループではnumberが1足される）
+    for number in 1..11 {
+        println!("for：今{}回目です",number);
+    }
 }
