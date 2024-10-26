@@ -20,7 +20,7 @@ fn main()
         number += 1;
     }
 
-    // numberの初期値が1で次のループでnumberに1足したときに11未満であればループを続ける
+    // numberが1以上10以下の間でループを続ける（次のループではnumberが1足される）
     for number in 1..11 {
         println!("for：今{}回目です",number);
     }
