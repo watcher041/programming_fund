@@ -8,6 +8,9 @@ fn main()
     let y = 3.2;
     print_typename(y); // f64
 
+    let z = true;
+    print_typename(z); // bool
+
     let s1 = 's';
     let s2 = "s";
     print_typename(s1); // char
