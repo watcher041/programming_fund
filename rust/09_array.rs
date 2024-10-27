@@ -37,6 +37,7 @@ fn main()
     
     // 配列では途中で要素を追加、削除できないので、その場合はvec!を利用
     let mut z = vec![5,4,3,2,1];
+    print_typename(z.clone()); // vec!の型を見るには、cloneをつけないとコンパイルエラーになる（alloc::vec::Vec<i32>）
     z.push(6);
     println!("z={:?}",z);
     z.remove(5);
