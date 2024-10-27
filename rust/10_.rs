@@ -21,18 +21,14 @@ fn main()
     for index in 0..x.len() {
         println!("{}番目：{}",index+1,x[index]);
     }
-    println!("配列の値をループして、値を取得");
-    for item in &x {
-        println!("要素のみ1：{}",item);
-    }
-    for item in x.iter() {
-        println!("要素のみ2：{}",item);
-    }
-    println!("配列のインデックスとそのときの値でループして、インデックスと値を取得");
+    println!("配列のインデックスとそのときの値でループして、値だけを取得");
     for (index, item) in x.iter().enumerate() {
         println!("{}番目：{}",index+1,item);
     }
-    
+    println!("配列の値をループして、値を取得");
+    for item in &x {
+        println!("{}",item);
+    }
 }
 
 // このようにすることで、引数が渡るとTにその引数の型が入る（ジェネリック）
