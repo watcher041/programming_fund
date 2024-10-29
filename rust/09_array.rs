@@ -41,7 +41,7 @@ fn main()
     z.push(6);
     println!("z={:?}",z);
     z.remove(5);
-    println!("Z={:?}",z);
+    println!("z={:?}",z);
 
 }
 
