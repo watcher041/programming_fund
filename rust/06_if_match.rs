@@ -2,6 +2,7 @@
 // 変数の値に基づいて処理を分岐するプログラム
 fn main()
 {
+    // 数字の範囲などで判定
     let number = 1;
     if number < 1 {
         println!("この数字は1未満の値です"); // number < 1
@@ -15,5 +16,12 @@ fn main()
         println!("この数字は1未満あるいは5以上の値です"); // number < 1 OR 5 <= number
     }else{
         println!("この数字は範囲外の値です");
+    }
+
+    // 一致するかどうかで判断
+    match number {
+        1 => println!("この値は1です"),
+        2 => println!("この値は2です"),
+        _ => println!("その他の値です"),
     }
 }
