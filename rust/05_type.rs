@@ -16,7 +16,7 @@ fn main()
     print_typename(s1); // char
     print_typename(s2); // &str
 
-    let t = "string";
+    let t = "Hello World!";
     print_typename(t); // &str
 }
 
