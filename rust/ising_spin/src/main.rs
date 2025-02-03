@@ -64,8 +64,24 @@ fn spin_initialization() -> [[f64;param!(Lx)];param!(Ly)]
 
     // 乱数列を初期化
     let mut rng = rand::thread_rng(); // デフォルトの乱数生成器を初期化します
-    let i: i32 = rng.gen();           // 整数値の乱数を生成する
-    let f: f32 = rng.gen();           // 浮動小数点数の乱数を生成する
+    let mut judge: f32;           // 浮動小数点数の乱数を生成する
+
+    // スピンの初期値を設定する
+    for x in 0..param!(Lx) {
+        for y in 0..param!(Ly) {
+
+            // 0から1の間の乱数を作成する
+            judge = rng.gen();
+
+            // 確率に応じてスピンを設定する
+            if judge > 0.5 {
+                spin[x][y] = 1.0;
+            }
+            else{
+                spin[x][y] = -1.0;
+            }
+        }
+    }
 
     return spin;
 }
