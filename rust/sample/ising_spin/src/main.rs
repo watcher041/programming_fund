@@ -47,6 +47,7 @@ fn main()
         beta = 1.0 / T;
         println!("\n 温度={}",T);
 
+        // 何回かシミュレーションを行う
         for count in 1..param!(COUNT_MAX) {
 
             // スピンの配置を初期化する
@@ -56,7 +57,7 @@ fn main()
     }
 }
 
-// 
+// スピンの配置を初期化する
 fn spin_initialization() -> [[f64;param!(Lx)];param!(Ly)]
 {
     let mut spin = [[0.0;param!(Lx)];param!(Ly)];
